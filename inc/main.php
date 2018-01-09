@@ -1,0 +1,88 @@
+
+  <div class="form">
+      
+      <ul class="tab-group">
+        <li class="tab"><a href="#signup">Iscriviti</a></li>
+        <li class="tab active"><a href="#login">Accedi</a></li>
+      </ul>
+      
+      <div class="tab-content">
+
+         <div id="login">   
+          <h1>Bentornato!</h1>
+          
+          <form action="index.php" method="post" autocomplete="off">
+          
+            <div class="field-wrap">
+            <label>
+              Indirizzo email<span class="req">*</span>
+            </label>
+            <input type="email" required autocomplete="off" name="email"/>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password" required autocomplete="off" name="password"/>
+          </div>
+          
+          <p class="forgot"><a href="inc/forgot.php">Password dimenticata?</a></p>
+          
+          <button class="button button-block" name="login" />Accedi</button>
+          
+          </form>
+
+        </div>
+          
+        <div id="signup">   
+          <h1>Iscriviti</h1>
+          
+          <form action="index.php" method="post" autocomplete="off">
+          
+          <div class="top-row">
+            <div class="field-wrap">
+              <label>
+                Nome<span class="req">*</span>
+              </label>
+              <input type="text" required autocomplete="off" name='firstname' />
+            </div>
+        
+            <div class="field-wrap">
+              <label>
+                Cognome<span class="req">*</span>
+              </label>
+              <input type="text"required autocomplete="off" name='lastname' />
+            </div>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Indirizzo email<span class="req">*</span>
+            </label>
+            <input type="email"required autocomplete="off" name='email' />
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Password<span class="req">*</span>
+            </label>
+            <input type="password"required autocomplete="off" name='password'/>
+          </div>
+          
+          <button type="submit" class="button button-block" name="register" />Registrati</button>
+          
+          </form>
+
+        </div>  
+        
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
+
+    <script src="/Progetto/js/index.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#myTopnav a:not(:first)').hide();
+		});
+	</script>
